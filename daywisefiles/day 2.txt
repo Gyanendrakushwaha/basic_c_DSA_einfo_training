@@ -1,0 +1,188 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+//     int x;
+//   scanf("%d",&x);
+  
+//   (x==0)?printf("number is 0"):(x >0)? printf("number is positive"):printf("number is negative");
+
+// if(x%2 == 0){
+//     printf("Number is even");
+// }else{
+//     printf("number is odd");
+// }
+
+
+// int a;
+//   scanf("%d",&a);
+// int b;
+// scanf("%d",&b);
+// if(x>b){
+//     printf("%d is max",x);
+// }else{
+//     printf("%d is max",b);
+// }
+
+// int a;
+//   scanf("%d",&a);
+// int b;
+// scanf("%d",&b);
+// int c;
+// scanf("%d",&c);
+// int d;
+// scanf("%d",&d);
+
+// int max;
+// if(a>b ){
+//     max=a;
+// }
+// if(max<c){
+//     max=c;
+// }
+// if(max<d){
+//     max =d;
+// }
+// printf("max number is %d",max);
+
+
+// if(0 && printf("1") && printf("2"));
+
+// float a;
+// scanf("%f",&a);
+
+// if(a>50000){
+//     a=0.9*a;
+// }else{
+//     a=0.95*a;
+// }
+// printf("%f",a);
+
+// char c;
+// scanf("%c",&c);
+
+// if(c >=65 && c<=90){
+//     printf("uppercase");
+// }
+// else if(c >=97 && c<=122){
+//     printf("lowercase");
+// }
+// else if(c >=48 && c<=57){
+//     printf("digit");
+// }
+
+// int q,p;
+// scanf("%d %d",&q,&p);
+
+// if(q>1000){
+//     p = q*p*0.9;
+// }else{
+//     p=q*p;
+// }
+// printf("%d",p);
+
+
+// int burger=150,pizza=300,sandwitch=100;
+// int final;
+
+// int burger_q,pizza_q,sandwitch_q;
+// scanf("%d %d %d",&burger_q,&pizza_q,&sandwitch_q);
+
+// if(burger_q>5){
+//     final = burger_q * burger * 0.9;
+// }else{
+//     final =burger_q * burger;
+// }
+// if(pizza_q*pizza > 1000){
+//     final =final +  pizza_q * pizza * 0.85;
+// }else{
+//     final=final +  pizza_q * pizza;
+// }
+// if(sandwitch_q*sandwitch > 500){
+//     final =final + sandwitch_q * sandwitch * 0.8;
+// }else{
+//     final=final + sandwitch_q * sandwitch;
+// }
+// final = final * 1.12;
+// printf("%d",final);
+
+int final;
+int phase;
+
+printf("enter phase \n");
+scanf("%d",&phase);
+
+int unit;
+printf("enter unit");
+scanf("%d",&unit);
+
+int  connection;
+printf("Enter type of connection 0 for domestic and 1 commercial \n");
+scanf("%d",&connection);
+
+
+
+//domestic
+if(connection == 0){
+    // printf("%c",connection);
+    if(unit >200){
+        final =(unit -200)*4.5 +100*3.95 + 50*2.85 + 50*1.45;
+    }
+    else if(unit<=200 &&unit>100){
+        final =(unit -100)*3.95 + 50*2.85 + 50*1.45;
+    }
+    else if(unit<=100 &&unit>50){
+        final =(unit -50)*2.85+50*1.45;
+    }
+    else if(unit<=50){
+        final =unit*1.45;
+    }
+    if(phase==1){
+        if(unit*0.06 < 20){
+            final=final +10+20;
+        }else{
+            final=final +10+unit*0.06;
+        }
+      
+    }
+    else if(phase==3){
+        if(unit*0.06 < 50){
+            final=final +10+50;
+        }else{
+            final=final +10+unit*0.06;
+        }
+      
+    }
+    printf("%d",final);
+}
+
+//commercial connection
+else if(connection == 1){
+    // printf("%c",connection);
+    if(unit >100){
+        final =(unit -100)*7 +100*3.95;
+    }
+    else if(unit<=100){
+        final =unit *3.95;
+    }
+   
+     if(phase==1){
+        if(unit*0.06 < 50){
+            final=final +20+50;
+        }else{
+            final=final +20+unit*0.06;
+        }
+    }
+    else if(phase==3){
+        if(unit*0.06 < 100){
+            final=final +20+100;
+        }else{
+            final=final +20+unit*0.06;
+        }
+    }
+    printf("%d",final);
+}
+// printf("%d",unit);
+
+    return 0;
+}

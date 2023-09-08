@@ -1,0 +1,74 @@
+// Online C compiler to run C program online
+#include<stdio.h>
+void main(){
+
+//program for gross salary
+
+// int bs,da,hra,gross_salary;
+// scanf("%d",&bs);
+// da=0.4 * bs;
+// hra = 0.2 * hra;
+// gross_salary=bs+da+hra;
+// printf("%d",gross_salary);
+
+//program for conversion
+// float distance;
+// scanf("%f",&distance);
+
+// printf("inches %f",distance * 39370.1);
+// printf("feet %f",distance * 3280.84);
+// printf("meter %f",distance * 1000);
+
+//scan the day and output should be month and day.
+// int day ;
+// scanf("%d",&day);
+// printf("month are %d and days %d",day/30,day%30);
+
+//add digits of a number
+// int digit=12391;
+
+// int d1,d2,d3,d4,d5;
+// d1=digit%10;
+// digit =digit/10;
+
+// d2=digit%10;
+// digit =digit/10;
+
+// d3=digit%10;
+// digit =digit/10;
+
+// d4=digit%10;
+// digit =digit/10;
+
+// d5=digit%10;
+// digit =digit/10;
+
+// printf("%d %d %d %d %d",d1, d2, d3, d4, d5);
+
+
+
+// printf("%d",(d5+1)%10);
+// printf("%d",(d4+1)%10);
+// printf("%d",(d3+1)%10);
+// printf("%d",(d2+1)%10);
+// printf("%d",(d1+1)%10);
+    
+
+// int selling;
+// scanf("%d",&selling);
+
+// int profit;
+// scanf("%d",&profit);   
+
+// printf("%d",(selling-profit)/15);
+
+///resturant bill
+int b,p,s;
+scanf("%d",&b);
+scanf("%d",&p);
+scanf("%d",&s);
+float c=(b*150 + p*300 + s*100)*1.125;
+printf("%f",c);
+}
+
+

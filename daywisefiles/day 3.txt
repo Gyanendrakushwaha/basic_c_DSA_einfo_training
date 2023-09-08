@@ -1,0 +1,129 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+//1.    //swaping two numbers
+    //1 by using temp variable.
+    
+    
+    
+    
+    //2.By using adding subtraction
+    
+    //3. by using multi and devide
+    
+    
+    
+    //4. by using xor
+    
+    //5.using 
+    
+//2.  no
+//   float questions,correct_marks,incorrect_marks,correct,incorrect,marks,total;
+  
+//   printf("Enter no of questions");
+//   scanf("%f",&questions);
+    
+//     printf("Enter no of correct_marks");
+//   scanf("%f",&correct_marks);
+  
+//   printf("Enter no of incorrect_marks");
+//   scanf("%f",&incorrect_marks);
+  
+//   printf("Enter no of correct");
+//   scanf("%f",&correct);
+  
+//   printf("Enter no of incorrect");
+//   scanf("%f",&incorrect);
+  
+//   total = correct_marks*questions;
+  
+//   marks=correct*correct_marks - incorrect*incorrect_marks;
+  
+//   float percentage = (marks/total)*100;
+//   if(percentage>=50){
+//       printf("Pass");
+//   }else{
+//       printf("Fail");
+//   }
+    
+    
+    // int x,y,z;
+    // printf("enter service charges of airline");
+    // scanf("%d %d %d",&x,&y,&z);
+    
+    // int a= x<y?x:(y<z?y:z);
+    // printf("%d",a);
+    
+    // float cpu,monitor,cpu_commission=0,monitor_commission=0;
+    // printf("Enter the amount for cpu and monitor");
+    // // scanf("%f %f",&cpu,&monir);
+    // scanf("%f",&cpu);
+    // // printf("y");
+    // if(cpu){
+    //     // printf("y");
+    //     if(cpu<10000){
+    //         cpu_commission =0;
+    //         //  printf("y");
+    //     }
+    //     else if(cpu>=10000 && cpu >25000){
+    //         cpu_commission=cpu_commission+0.08*cpu;
+    //     }
+    //     else if(cpu >=25000){
+    //         if(cpu == 25000){
+    //             cpu_commission=cpu_commission+20000;
+    //         }
+    //         if(cpu>25000){
+    //             cpu=cpu-25000;
+    //             cpu_commission=cpu_commission+0.10*cpu;
+    //         }
+            
+    //     }
+    // }
+    // // if(monitor){
+    // //     if(monitor<10000){
+    // //         monitor_commission
+    // //     }
+    // }
+    
+    //test
+    
+    
+  
+
+
+float var,days,price,fine=0;
+
+printf("Enter the days");
+scanf("%f",&days);
+
+printf("Enter the price");
+scanf("%f",&price);
+
+if(days>10){
+    var=days-10;
+    fine=var*20+50+25;
+}
+else if(days<=10 && days>=6){
+    var=days-5;
+    fine=var*10+25;
+}
+else if(days<=5 && days>=0){
+    var=days;
+    fine=var*5;
+}
+// printf("fine is %f",fine);
+//chek max among fine and price
+if(days>30){
+    if(fine>price){
+        printf("fine is %f",fine);
+    }else{
+        printf("fine is %f",price);
+    }
+}
+
+//31 800 800 
+
+    return 0;
+}

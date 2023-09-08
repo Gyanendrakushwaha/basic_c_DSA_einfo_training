@@ -1,0 +1,123 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    
+    
+// float var,days,price,fine=0;
+// printf("Enter the days");
+// scanf("%f",&days);
+
+// printf("Enter the price");
+// scanf("%f",&price);
+
+// if(days>10){
+//     var=days-10;
+//     fine=var*20+50+25;
+// }
+// else if(days<=10 && days>=6){
+//     var=days-5;
+//     fine=var*10+25;
+// }
+// else if(days<=5 && days>=0){
+//     var=days;
+//     fine=var*5;
+// }
+// // printf("fine is %f",fine);
+// //chek max among fine and price
+// if(days>30){
+//     if(fine>price){
+//         printf("fine is %f",fine);
+//     }else{
+//         printf("fine is %f",price);
+//     }
+// }
+
+
+
+
+
+// int a,b,ans;
+// int choice;
+
+// scanf("%d %d",&a,&b);
+// printf("enter the choice");
+// scanf("%d",&choice);
+// switch(choice){
+//     case 1: 
+//     ans=a+b;
+//     printf("sum is %d",ans);
+//     break;
+    
+//     case 2: 
+//     ans=a-b;
+//     printf("subtraction is %d",ans);
+//     break;
+    
+//     case 3: ans=a*b;
+//     printf("multi  is %d",ans);
+//     break;
+    
+//     case 4: ans=a+b;
+//     printf("sum is %d",ans);
+//     break;
+    
+//     default: printf("you entered wrong");
+    
+// }
+
+    char choice;
+    printf("press u to see up's food, m to see maharthi food,i for indori food");
+    
+    scanf("%c",&choice);
+    int upfood,marathifood,indorifood,totalbill;
+    switch(choice){
+        
+        case 'u': printf("uttar pradesh menu \n 1.Dal Bati - 50Rs \n 2. litti choka - 50Rs \n 3.Khichdi - 50Rs ");
+        scanf("%d",&upfood);
+        if(upfood==1){
+            totalbill=totalbill+50;
+        }
+        else if(upfood==2){
+            totalbill=totalbill+50;
+        }
+        else if(upfood==3){
+            totalbill=totalbill+50;
+        }
+        
+        
+        
+        
+        case 'm': printf("marathi  menu \n 1.vada - 50Rs \n 2. vada pav - 50Rs \n 3.fish - 50Rs ");
+        scanf("%d",&marathifood);
+        if(marathifood==1){
+            totalbill=totalbill+50;
+        }
+        else if(marathifood==2){
+            totalbill=totalbill+50;
+        }
+        else if(marathifood==3){
+            totalbill=totalbill+50;
+        }
+        
+        case 'i': printf("indori  menu \n 1.poha - 50Rs \n 2. kachori - 50Rs \n 3.usal poha - 50Rs ");
+         scanf("%d",&indorifood);
+        if(indorifood==1){
+            totalbill=totalbill+50;
+        }
+        else if(indorifood==2){
+            totalbill=totalbill+50;
+        }
+        else if(indorifood==3){
+            totalbill=totalbill+50;
+        }
+        
+        
+        
+    }
+    //u m r i  
+
+
+printf("total bill= %d",totalbill);
+    return 0;
+}

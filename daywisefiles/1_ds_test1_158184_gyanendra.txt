@@ -1,0 +1,90 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+struct node *start;
+
+struct node{
+int data;
+struct node* next;;
+};
+
+int createlist(){
+int n,x;
+printf("enter the no of nodes");
+scanf("%d",&n);
+
+//creating first node
+struct node* new=malloc(sizeof(struct node));
+struct node *temp=start=new;
+
+printf("Enter the first data");
+scanf("%d",&new->data);
+new->next=NULL;
+
+//creating rest nodes
+for(int i=1;i<n;i++){
+new=malloc(sizeof(struct node));
+
+
+printf("Enter thr data");
+scanf("%d",&new->data);
+new->next=NULL;
+
+temp->next=new;
+temp=new;
+}
+return n;
+}
+
+void sort(int size){
+struct node *temp=start;
+int arr[size];
+for(int i=0;i<size;i++){
+if(temp!=NULL){
+arr[i]=temp->data;
+}
+temp=temp->next;
+//printf("%d",arr[i]);
+}
+
+for(int i=0;i<size;i++){
+for(int j=i+1;j<size;j++){
+if(arr[i]>arr[j]){
+int v=arr[i];
+arr[i]=arr[j];
+arr[j]=v;
+}
+
+}
+}
+
+for(int i=0;i<size;i++){
+printf("%d",arr[i]);
+}
+}
+
+//temp1=temp1->next;
+//}
+
+
+
+
+
+void  main(){
+int size=createlist();
+struct node *ptr=start;
+int i=0;
+
+
+
+while(ptr!=NULL){
+printf("node = %d value = %d \n",i+1,ptr->data);
+i++;
+ptr=ptr->next;
+}
+
+printf("\n");
+
+
+sort(size);
+}
