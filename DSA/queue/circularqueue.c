@@ -28,6 +28,7 @@ r=r+1;
 q[r]=data;
 }
 }
+
 int dequeue(int q[]){
 int y;
 //check underflow
